@@ -1,0 +1,6 @@
+Introduction
+The project present is a basic game in which a piece on the screen navigates through an endless path in space. The game is named "Galaxy".
+
+Installation
+To install the game download the files present in this directory if you are using vs code then it would be best to install a virtual environment and install Kivy-2.3.0.whl file for cpython 3.8. To perform the installation of the virtual environment open your vs code terminal
+and insert the following command
