@@ -1,0 +1,30 @@
+#:import menu menu
+
+MainWidget:
+
+<MainWidget>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'images/bg1.jpg'
+    menu_widget: menu_widget
+    perspective_point_x: self.width/2
+    perspective_point_y: self.height * 0.75
+    Label:
+        font_size: dp(30)
+        font_name: 'fonts/Eurostile.ttf'
+        pos_hint: {"center_x": 0.1, "center_y": 0.9}
+        text: "SCORE: " + str(root.score)
+    Button:
+        id: pause_button
+        font_size: dp(30)
+        font_name: 'fonts/Eurostile.ttf'
+        size_hint: 0.1, 0.15
+        pos_hint: {"center_x": 0.9, "center_y": 0.9}
+        text: 'PAUSE'
+        background_normal: ''
+        background_color: 1, 0.3, 0.4, 0.85
+        on_press: root.toggle_pause()
+    MenuWidget:
+        id: menu_widget
